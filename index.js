@@ -74,7 +74,7 @@ renderHtml.innerHTML = rendering(posts);
 function clicked(i) {
   likes = document.getElementById(`likes-${i}`);
   current = posts[i].likes;
-  current += 1;
-  posts[i].likes = current;
+  newcurrent = current + 1;
+  posts[i].likes = newcurrent;
   likes.innerHTML = `${current} likes`;
 }
