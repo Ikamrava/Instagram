@@ -1,0 +1,104 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+section,
+main,
+article,
+header,
+footer,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  width: 375px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.351);
+}
+
+header img {
+  width: 180px;
+  padding: 15px;
+}
+
+.profile-wrapper {
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  gap: 5px;
+  text-align: center;
+}
+
+#profile-pic {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.name-country {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: start;
+}
+.name-country h3 {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.name-country h4 {
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+#main-img {
+  max-width: 375px;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+  margin: 15px;
+}
+
+.icons img {
+  width: 25px;
+}
+#likes {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#comments {
+  font-size: 0.8rem;
+}
+
+.comment-like {
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.comment-like span {
+  font-weight: bold;
+}
+
+#rendering {
+  width: 100%;
+  background-color: aqua;
+  margin: auto;
+  padding: 0;
+}
