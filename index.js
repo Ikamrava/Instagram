@@ -55,7 +55,7 @@ function rendering(list) {
     </div>
     <div class="comment-like">
         <p id = "likes">${list[i].likes} likes</p>
-        <p id = "comments"><span>gus1819</span> ${list[i].comment}</p>
+        <p id = "comments"><span>gus1819 &nbsp</span>${list[i].comment}</p>
         </div>
     </footer>`;
 
