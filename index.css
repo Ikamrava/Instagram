@@ -17,12 +17,13 @@ p {
 
 .container {
   width: 375px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-top: auto;
 }
 
 header {
@@ -98,6 +99,6 @@ header img {
 }
 
 #rendering {
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
 }
