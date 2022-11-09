@@ -30,11 +30,9 @@ const posts = [
 ];
 
 heart = document.getElementById("heart");
-dm = document.getElementById("dm");
-com = document.getElementById("com");
 
 renderHtml = document.getElementById("rendering");
-renderlikes = document.getElementById("render-likes");
+
 let body = "";
 finalBody = "";
 secondpart = "";
@@ -53,19 +51,17 @@ function rendering(list) {
 </section>
 <img id = "main-img" src="${list[i].post}" alt="">
 <div class="icons">
-          <img id="heart" src="images/icon-heart.png" alt="" />
+          <img class = "likes" id="heart" src="images/icon-heart.png" onclick="clicked(${i})" />
           <img id="com" src="images/icon-comment.png" alt="" />
           <img id="dm" src="images/icon-dm.png" alt="" />
         </div>
 <footer>
     <div class="comment-like">
-    <p id = "likes-${i}">${list[i].likes} likes</p>
+    <p  id = "likes-${i}">${list[i].likes} likes</p>
     <p id = "comments"><span>gus1819 &nbsp</span>${list[i].comment}</p>
     </div>
     </footer>
   `;
-
-    ``;
 
     finalBody += body + secondpart;
   }
@@ -75,6 +71,10 @@ function rendering(list) {
 
 renderHtml.innerHTML = rendering(posts);
 
-heart.addEventListener("click", function () {
-  console.log("clicked");
-});
+function clicked(i) {
+  likes = document.getElementById(`likes-${i}`);
+  current = posts[i].likes;
+  current += 1;
+  posts[i].likes = current;
+  likes.innerHTML = `${current} likes`;
+}

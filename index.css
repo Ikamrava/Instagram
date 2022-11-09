@@ -102,3 +102,10 @@ header img {
   margin: 0 auto;
   padding: 0;
 }
+
+#likes .likes:hover {
+  opacity: 20;
+}
+.icons img:hover {
+  opacity: 0.5;
+}
