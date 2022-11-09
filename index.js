@@ -34,7 +34,7 @@ let body = "";
 finalBody = "";
 
 function rendering(list) {
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < list.length; i++) {
     body = `
 
 <section>
